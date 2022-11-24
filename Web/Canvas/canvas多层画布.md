@@ -11,7 +11,6 @@
 
 <style>
 
-
   canvas {
 
    position: absolute;
@@ -35,7 +34,7 @@
    background-color: blue;
 
   }
-
+  
  </style>
 ```
 
