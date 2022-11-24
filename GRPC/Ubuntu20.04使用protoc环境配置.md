@@ -2,18 +2,20 @@ protoc环境配置包含protoc、Grpc-gateway等方面的配置。
 
 ## Protoc
 
-github路径：
+github地址：
+
 https://github.com/protocolbuffers/protobuf
 
 安装步骤：
-1.下载合适的压缩包文件
-2.解压
-3.根据readme.txt，将bin文件里的可执行文件protoc移动到/usr/local/bin里
+1. 下载合适的压缩包文件
+2. 解压
+3. 根据readme.txt，将bin文件里的可执行文件protoc移动到/usr/local/bin里
 
 
 ## Grpc-gateway
 
 github地址：
+
 https://github.com/grpc-ecosystem/grpc-gateway
 
 安装步骤：
