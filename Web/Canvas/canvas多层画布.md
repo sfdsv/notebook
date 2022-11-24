@@ -1,11 +1,16 @@
-
 多层画布的关键在于
-1、position绝对，
-2、z-index分布，数字小的在下层
+
+1. position绝对，
+2. z-index分布，数字小的在下层
+
+
 
 实现代码：
+
 ```css
+
 <style>
+
 
   canvas {
 
@@ -33,3 +38,4 @@
 
  </style>
 ```
+
