@@ -3,6 +3,8 @@
 新建github仓库：仓库名最好不要带奇怪符号，就简单英文单词就好(如pic)：
 ![20221125145606](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/20221125145606.png)
 
+>仓库属性一定要公开！！！不然网页上不能直接看到。
+
 点击setting->deverloper settings->Personal access tokens->generate new token(classic):
 ![20221125145820](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/20221125145820.png)
 
