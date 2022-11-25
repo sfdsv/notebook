@@ -35,4 +35,5 @@
 
 因为两端的数据并不是同时发送完，所以两端谁发送完数据都需要自己告诉对方一次，并且对方确认一次。
 
+![image](https://user-images.githubusercontent.com/73980771/203983481-4ad43e3e-5d05-43c0-9a39-56962c1af677.png)
 
