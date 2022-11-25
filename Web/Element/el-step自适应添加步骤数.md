@@ -1,6 +1,6 @@
 实现效果：  
 
-![image-20221125000728291](https://cdn.jsdelivr.net/gh/sfdsv/picbed/img/202211250007347.png)
+![image-20221125000728291](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/202211250007347.png)
 
 
 实现代码：
