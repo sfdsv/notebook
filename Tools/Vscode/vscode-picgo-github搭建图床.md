@@ -4,7 +4,7 @@
 
 ![20221125145606](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/20221125145606.png)
 
->仓库属性一定要公开！！！不然网页上不能直接看到。
+>仓库属性一定要公开！！！不然网页上不能直接看到图片，而只能看到图片名。
 
 点击setting->deverloper settings->Personal access tokens->generate new token(classic):
 
