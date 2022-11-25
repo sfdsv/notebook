@@ -14,6 +14,6 @@
 
    ![image-20221124230036421](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/202211242300492.png)
 
-4. 修改下载链接中的az764295.vo.msecnd.net替换为替换为国内源vscode.cdn.azure.cn
+4. 修改下载链接中的**az764295.vo.msecnd.net**替换为替换为国内源**vscode.cdn.azure.cn**
 
 5. 再访问替换下载源后的链接即可高速下载
