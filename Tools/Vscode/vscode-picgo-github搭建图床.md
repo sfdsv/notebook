@@ -47,6 +47,7 @@
     * 截图，ctrl+alt+u，从剪切板中上传图片；
 
 > ubuntu20.04使用X11系统，默认没有安装xclip，需要手动安装：
+> 
 >![20221125151621](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/20221125151621.png)
 >![20221125151449](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/20221125151449.png)
 
