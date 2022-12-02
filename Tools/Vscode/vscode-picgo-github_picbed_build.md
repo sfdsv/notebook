@@ -1,3 +1,5 @@
+# Vscode-PicGo-Github搭建图床详细步骤
+
 1. 创建github仓库,生成token
 
 新建github仓库：仓库名最好不要带奇怪符号，就简单英文单词就好(如pic)：

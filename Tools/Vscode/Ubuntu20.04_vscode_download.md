@@ -1,3 +1,5 @@
+# Ubuntu20.04如何快速下载Vscode
+
 1. 进入vscode官网下载界面：
 
 ​		https://code.visualstudio.com/Download
