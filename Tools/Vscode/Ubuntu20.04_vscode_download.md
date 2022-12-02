@@ -4,8 +4,6 @@
 
 ​		https://code.visualstudio.com/Download
 
-
-
 2. 点击.deb文件。
 
    ![image-20221124225744273](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/202211242257309.png)
