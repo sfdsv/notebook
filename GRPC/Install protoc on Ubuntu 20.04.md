@@ -20,7 +20,7 @@ https://lindevs.com/install-protoc-on-ubuntu/
 
 从仓库的发布页下载Zip压缩文件：
 ```bash
-curl -Lo protoc.zip "https://github.com/protocolbuffers/protobuf/releases/latest/download/protobuf-all-${PROTOC_VERSION}.zip"
+curl -Lo protoc.zip "https://github.com/protocolbuffers/protobuf/releases/latest/download/protoc-${PROTOC_VERSION}-linux-x86_64.zip"
 ```
 
 运行下列命令解压文件：
