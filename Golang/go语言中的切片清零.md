@@ -100,9 +100,9 @@ y= [[0] [1] [2] [3] [4]]
 
 ```go
 type slice struce{
-    array  unsafe.Pointer //指针，指向底层数组
-    len		int				
-    cap		int
+    array  unsafe.Pointer // 用来存储实际数据的数组指针，指向一块连续的内存
+    len		int	 // 用来存储实际数据的数组指针，指向一块连续的内存			
+    cap		int   // array数组的长度
 }
 ```
 
