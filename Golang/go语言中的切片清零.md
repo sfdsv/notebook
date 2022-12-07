@@ -108,7 +108,7 @@ type slice struce{
 
 **切片的存储**
 
-![image](https://user-images.githubusercontent.com/73980771/206098216-c4c0a77a-5a45-4ab5-9dea-6362df5a3a9f.png)
+![image](https://user-images.githubusercontent.com/73980771/206105693-1583ead5-3b57-4949-8b2e-0455116907a2.png)
 
 > 首先，在go中，切片类型的变量实际上存放的是一个地址，该地址即为其引用的底层数组的第一个元素的地址，也可以说是这个数组的地址。
 >
