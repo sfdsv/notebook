@@ -18,18 +18,17 @@
 
 就是markdown的语法。一般使用这三个符号：
 
-* # : 标题
-* - : 列表
-* --- : 分隔符
-
-...
+* `#` : 标题
+* `-` : 列表
+* `---` : 分隔符
+* ...
 
 ### 导出
 
-vscode中
+* vscode
 
-1. 在资源管理器栏，右键markdown文件，点击`Open as markmap`
+    1. 在资源管理器栏，右键markdown文件，点击`Open as markmap`
 
-2. 打开一个markdown文件，在标题栏找到markmap图标：
+    2. 打开一个markdown文件，在标题栏找到markmap图标：
 
-![image](https://user-images.githubusercontent.com/73980771/206372873-34f5fe30-332c-4e15-8919-ce0e4af8226c.png)
+     ![image](https://user-images.githubusercontent.com/73980771/206372873-34f5fe30-332c-4e15-8919-ce0e4af8226c.png)
