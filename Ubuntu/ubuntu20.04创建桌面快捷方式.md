@@ -35,4 +35,4 @@ gio set $HOME/Desktop/xxx.desktop metadata::trusted true
 ```
 
 2. 程序已有开始菜单快捷方式
-    ![2022-11-21 13-56-17屏幕截图](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/2022-11-21 13-56-17屏幕截图.png)
+![2022-11-21 13-56-17屏幕截图](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/2022-11-21 13-56-17屏幕截图.png)
