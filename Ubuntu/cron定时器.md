@@ -70,7 +70,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 如`*/2 * * * *` 代表当前分钟数能被2整除的话就执行，等价于0,2,4,6,,,,,,,58
 
-**例1：在cron中执行需要sudu权限的脚本**
+**例1**
 
 需求：每天定时执行脚本，脚本中需要sudo执行的指令。
 
