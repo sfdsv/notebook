@@ -6,10 +6,11 @@
 
 版本	Windows 11 家庭中文版
 版本	22H2
-安装日期	‎2022/‎10/‎7
-操作系统版本	22621.819
+安装日期	2022/10/7
+操作系统版本	22621.963
 序列号	PF42FJPA
-体验	Windows Feature Experience Pack 1000.22636.1000.0
+体验	Windows Feature Experience Pack 1000.22638.1000.0
+
 
 ### 激活WSL
 
@@ -20,7 +21,7 @@ WSL是Windows subSystem For Linux。
 * 控制面板额 -> 程序 -> 启用或关闭Windows功能
 * 勾选“**适用于Linux的Windows子系统**"与"**虚拟机平台**"。
 
-![image-20221214150043349](assets/image-20221214150043349.png)
+<img width="620" alt="image" src="https://user-images.githubusercontent.com/73980771/207613954-990c5906-2eb6-49d9-93c2-c9f816cd232a.png">
 
 设置完成后重启电脑生效.
 
@@ -79,7 +80,7 @@ C:\Users\UserName\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_79
 
 在微软商城搜索ubuntu22.04，点击安装：
 
-![image-20221214150340200](assets/image-20221214150340200.png)
+<img width="257" alt="image" src="https://user-images.githubusercontent.com/73980771/207614195-673f8c15-5e27-4da8-b633-3897ee203dff.png">
 
 ### 配置子系统
 
@@ -277,8 +278,7 @@ PS C:\Users\Hcsci> wsl --export Ubuntu-22.04 D:\export.tar
 正在导出，这可能需要几分钟时间。
 操作成功完成。
 ```
-
-![image-20221214163432240](assets/image-20221214163432240.png)
+导出完成后，在对应文件路径下，出现export.tar文件。
 
 3. 导出完成后,就需要将原有的分发进行卸载
 
@@ -408,7 +408,7 @@ $ bash ubuntu-wsl2-systemd-script.sh --force
 >
 > 参考链接:https://ubuntu.com//blog/ubuntu-wsl-enable-systemd
 >
-> ![image-20221214201006588](assets/image-20221214201006588.png)
+> <img width="503" alt="image" src="https://user-images.githubusercontent.com/73980771/207614715-f2928c30-4fcd-4f97-9a22-50915866240a.png">
 >
 > 1. 进入ubuntu子系统内部,修改` /etc/wsl.conf`文件:
 >
@@ -442,9 +442,7 @@ $ sudo apt install -y ubuntu-desktop
 
 ### 资源管理器访问wsl
 
-* 左侧linux栏
-  ![image-20221214155049575](assets/image-20221214155049575.png)
-
+* 左侧导航栏linux
 
 * 路径输入`\\wsl$`
-  ![image-20221214155139377](assets/image-20221214155139377.png)
+
