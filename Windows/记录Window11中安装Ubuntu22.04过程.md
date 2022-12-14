@@ -4,12 +4,12 @@
 
 **操作系统**
 
-版本	Windows 11 家庭中文版
-版本	22H2
-安装日期	2022/10/7
-操作系统版本	22621.963
-序列号	PF42FJPA
-体验	Windows Feature Experience Pack 1000.22638.1000.0
+版本	Windows 11 家庭中文版  
+版本	22H2  
+安装日期	2022/10/7  
+操作系统版本	22621.963  
+序列号	PF42FJPA  
+体验	Windows Feature Experience Pack 1000.22638.1000.0  
 
 
 ### 激活WSL
@@ -86,7 +86,7 @@ C:\Users\UserName\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_79
 
 #### 设置用户名和密码
 
-第一次进入ubuntu软件后，默认需要设置用户名**(全小写**)和密码（不是Window的用户名）。
+第一次进入ubuntu软件后，默认需要设置用户名(**全小写**，不是Window的用户名)和密码。
 
 **注意：**
 
