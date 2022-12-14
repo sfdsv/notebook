@@ -84,6 +84,35 @@ C:\Users\UserName\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_79
 
 ### 配置子系统
 
+#### 启动子系统
+
+从开始菜单里启动ubuntu22.04 LTS软件。
+
+**踩坑**：
+
+1. 提示WslRegisterDistribution failed with error: 0x800701bc
+
+原因：内核未升级。
+
+解决办法：打开微软商店，搜索wsl，点击安装`Windows Subsystem for Linux`。
+
+<img width="540" alt="image" src="https://user-images.githubusercontent.com/73980771/207621856-b4a96b85-573e-4387-a19b-fe5f6748a3e6.png">
+
+2. 提示WslRegisterDistribution failed with error: 0x80071772
+
+原因：子系统没有安装在C盘导致。
+
+解决办法：
+
+    1. 在设置的应用里，找到Ubuntu22.04 LTS，点击移动，将其移动到C盘。
+    
+    <img width="533" alt="image" src="https://user-images.githubusercontent.com/73980771/207622684-3636d1b1-4ce3-4ab7-a3ff-da143e36f5d5.png">
+
+    2. 首先卸载Ubuntu，然后在设置->系统->存储->更改新内容的保存位置，将“新的应用保存到”修改为C盘，并重新安装 Ubuntu。
+    
+    <img width="418" alt="image" src="https://user-images.githubusercontent.com/73980771/207622914-fe918f46-5502-490d-8de3-b543eee5ebea.png">
+
+
 #### 设置用户名和密码
 
 第一次进入ubuntu软件后，默认需要设置用户名(**全小写**，不是Window的用户名)和密码。
