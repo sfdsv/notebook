@@ -127,16 +127,16 @@ C:\Users\UserName\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_79
 
 ```bash
 # 新建普通用户:-m 创建用户时建立home目录，-s使用bash
-$ useradd -m luz -s /bin/bash
+useradd -m luz -s /bin/bash
 # 设置密码
-$ passwd luz
+passwd luz
 
 # 重启ubuntu子系统，默认以root用户登录
 
 # 赋予新建用户sudo权限
-$ sudo adduser luz sudo 或者sudo usermod -aG sudo luz
+sudo adduser luz sudo 或者sudo usermod -aG sudo luz
 # 查看用户是否具有sudo访问权限
-$ sudo -l -U luz
+sudo -l -U luz
 ```
 
 ```
@@ -168,9 +168,9 @@ Ubuntu2204 config --default-user luz # 因为我是安装的Ubuntu-22.04，网�
 
 ```bash
 # 设置密码
-$ sudo passwd
+sudo passwd
 # 切换到root
-$ su root
+su root
 ```
 
 ```bash
@@ -186,7 +186,7 @@ root@DESKTOP-1P6CG7H:/home/luz#
 **验证用户是否具有sudo访问权限** 
 
 ```bash
-$ sudo -l -U luz
+sudo -l -U luz
 ```
 
 ```bash
@@ -199,7 +199,7 @@ User luz is not allowed to run sudo on DESKTOP-1P6CG7H.
 为了方便修改配置文件，喜欢用gedit的就可以安装。
 
 ```bash
-$ sudo apt-get install gedit
+sudo apt-get install gedit
 ```
 
 #### 换国内源
@@ -207,13 +207,13 @@ $ sudo apt-get install gedit
 1.备份原来的source文件
 
 ```bash
-$ sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak 
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak 
 ```
 
 2.修改sources.list文件
 
 ```bash
-$ sudo gedit /etc/apt/sources.list
+sudo gedit /etc/apt/sources.list
 ```
 
 3.添加国内源，选择其一就可以了。
@@ -267,8 +267,8 @@ deb-src http://mirrors.163.com/ubuntu/ jammy-backports main restricted universe 
 4.然后执行命令更新源
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade
 ```
 
 #### 将空间迁移至其他盘
@@ -357,15 +357,15 @@ PS C:\Users\Hcsci> wsl --import Ubuntu-22.04 'D:\wsl\ubuntu2204' D:\export.tar -
 1. 需要安装git来工作.
 
 ```bash
-$ sudo apt install git
+sudo apt install git
 ```
 
 2. 运行脚本和命令
 
 ```bash
-$ git clone https://github.com/DamionGans/ubuntu-wsl2-systemd-script.git
-$ cd ubuntu-wsl2-systemd-script/
-$ bash ubuntu-wsl2-systemd-script.sh
+git clone https://github.com/DamionGans/ubuntu-wsl2-systemd-script.git
+cd ubuntu-wsl2-systemd-script/
+bash ubuntu-wsl2-systemd-script.sh
 # 键入密码,然后等待直到脚本执行完成
 ```
 
@@ -404,9 +404,9 @@ root@DESKTOP-1P6CG7H:/mnt/c/Users/Hcsci#
 
 ```bash
 # 1.进入ubuntu-wsl2-systemd-script目录
-$ cd /home/luz/ubuntu-wsl2-systemd-script
+cd /home/luz/ubuntu-wsl2-systemd-script
 # 2.打开enter-systemd-namespace文件
-$ gedit enter-systemd-namespace
+gedit enter-systemd-namespace
 # 3.将文件中的对应内容替换掉
 USER_HOME="$(getent passwd | awk -F: '$1=="'"$SUDO_USER"'" {print $6}')"
 if [ -n "$SYSTEMD_PID" ] && [ "$SYSTEMD_PID" != "1" ]; then
@@ -423,7 +423,7 @@ if [ -n "$SYSTEMD_PID" ] && [ "$SYSTEMD_PID" != "1" ]; then
     exit 1
 fi
 # 4.然后重新安装
-$ bash ubuntu-wsl2-systemd-script.sh --force
+bash ubuntu-wsl2-systemd-script.sh --force
 ```
 
 3. 重新启动ubuntu22.04软件
@@ -464,9 +464,9 @@ $ bash ubuntu-wsl2-systemd-script.sh --force
 ##### 安装gnome
 
 ```bash
-$ sudo apt update
-$ sudo apt upgrade
-$ sudo apt install -y ubuntu-desktop
+sudo apt update
+sudo apt upgrade
+sudo apt install -y ubuntu-desktop
 ```
 
 ### 资源管理器访问wsl
