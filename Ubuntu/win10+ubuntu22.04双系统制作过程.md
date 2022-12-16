@@ -1,5 +1,7 @@
 #  win10+ubuntu-22.04双系统制作过程
 
+参考链接：https://huaweicloud.csdn.net/6356034cd3efff3090b58a9b.html
+
 **已存在win10系统**。
 
 ## Windows设置
