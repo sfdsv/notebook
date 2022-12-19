@@ -23,6 +23,8 @@ edge浏览器有三个不同的渠道，stable、beta和dev渠道。
 
 ## 命令行方式
 
+<img width="842" alt="image" src="https://user-images.githubusercontent.com/73980771/208445223-13bce3ab-6134-46fc-8080-131896e29fd5.png">
+
 ### 系统更新
 在正式安装之前，您应该运行系统更新以确保现有软件包都是最新的，以避免在安装过程中出现任何冲突。
 ```bash
