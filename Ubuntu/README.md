@@ -20,31 +20,23 @@ xdg-user-dirs-gtk-update
 sudo apt install net-tools
 ```
 
-### 截图软件flameshot
-[ubuntu20.04截图工具flameshot](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E6%88%AA%E5%9B%BE%E5%B7%A5%E5%85%B7flameshot.md)
+### [截图软件flameshot](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E6%88%AA%E5%9B%BE%E5%B7%A5%E5%85%B7flameshot.md)
 
 ### 版本管理工具git
 ```bash
 sudo apt install git
 ```
 
-### golang
-[Ubuntu20.04 安装和升级go](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%87%E7%BA%A7go.md)
+### [golang](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%87%E7%BA%A7go.md)
 
-### wps2019
-[ubuntu20.04安装wps2019](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85wps2019.md)
+### [wps2019](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85wps2019.md)
 
-### chrome浏览器
-[ubuntu20.04安装chrome浏览器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8.md)
+### [chrome浏览器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8.md)
 
-### edge浏览器
-[ubuntu20.04安装edge浏览器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85edge%E6%B5%8F%E8%A7%88%E5%99%A8.md)
+### [edge浏览器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85edge%E6%B5%8F%E8%A7%88%E5%99%A8.md)
 
-### gcc编译器
-[ubuntu安装最新版gcc](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85gcc.md)
+### [gcc编译器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85gcc.md)
 
 ## ubuntu20.04软件使用
 
-### cron定时器介绍
-
-[cron定时器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/cron%E5%AE%9A%E6%97%B6%E5%99%A8.md)
+### [cron定时器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/cron%E5%AE%9A%E6%97%B6%E5%99%A8.md)
