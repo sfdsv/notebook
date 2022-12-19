@@ -17,9 +17,7 @@ edge浏览器有三个不同的渠道，stable、beta和dev渠道。
   sudo dpkg -i "microsoft-edge-stable_108.0.1462.54-1_amd64.deb"
   ```
 
-* beta和dev渠道同理
-
-[官方主页](https://www.microsoftedgeinsider.com/zh-cn/download/?platform=linux)
+* beta和dev渠道同理 [官方主页](https://www.microsoftedgeinsider.com/zh-cn/download/?platform=linux)
 
 ## 命令行方式
 
