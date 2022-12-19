@@ -40,5 +40,5 @@ sudo apt install git
 ## edge浏览器
 [ubuntu20.04安装edge浏览器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85edge%E6%B5%8F%E8%A7%88%E5%99%A8.md)
 
-## 
+## gcc
 [ubuntu安装最新版gcc](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85gcc.md)
