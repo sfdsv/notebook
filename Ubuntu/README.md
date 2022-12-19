@@ -42,3 +42,9 @@ sudo apt install git
 
 ## gcc编译器
 [ubuntu安装最新版gcc](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85gcc.md)
+
+# ubuntu20.04软件使用
+
+### cron定时器介绍
+
+[cron定时器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/cron%E5%AE%9A%E6%97%B6%E5%99%A8.md)
