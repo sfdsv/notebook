@@ -11,11 +11,11 @@ edge浏览器有三个不同的渠道，stable、beta和dev渠道。
 
 <img width="553" alt="image" src="https://user-images.githubusercontent.com/73980771/208440592-0f8ddb21-4a10-4ba6-8d20-55c9ad5cf86f.png">
 
-* 直接双击软件，点击安装完成。
-* 或者运行下列命令安装：
-```bash
-sudo dpkg -i "microsoft-edge-stable_108.0.1462.54-1_amd64.deb"
-```
+  1. 直接双击软件，点击安装完成。
+  2. 或者运行下列命令安装：
+  ```bash
+  sudo dpkg -i "microsoft-edge-stable_108.0.1462.54-1_amd64.deb"
+  ```
 
 * beta和dev渠道同理
 
