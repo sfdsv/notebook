@@ -1,4 +1,4 @@
-# Install protoc on Ubuntu 20.04
+# 在ubuntu20.04上安装protoc
 
 来源：https://lindevs.com/install-protoc-on-ubuntu/
 
