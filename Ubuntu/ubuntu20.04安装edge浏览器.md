@@ -56,3 +56,32 @@ sudo apt install microsoft-edge-stable
 
 安装完成后，你可以点击图标或在「终端」中执行microsoft-edge & 来打开使用
 
+# 更新edge浏览器
+
+在更新 Ubuntu 系统时，Edge 浏览器就会自动更新：
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+或者，您可以主动升级 Edge 包：
+```bash
+sudo apt upgrade microsoft-edge-{version}
+```
+
+# 卸载edge浏览器
+
+* 在 Ubuntu 中卸载 Microsoft Edge 非常容易，只需在「终端」中执行如下命令即可：
+```bash
+sudo apt autoremove microsoft-edge-stable --purge
+```
+
+* 卸载完成后，可执行以下命令删除 microsoft-edge.gpg 密钥：
+```bash
+sudo rm -rf /etc/apt/trusted.gpg.d/microsoft*
+sudo rm -rf /usr/share/keyrings/microsoft*
+```
+
+* 最后，还需要删除导入的 edge 官方源：
+```bash
+sudo rm -rf /etc/apt/sources.list.d/microsoft-edge.list
+```
+
