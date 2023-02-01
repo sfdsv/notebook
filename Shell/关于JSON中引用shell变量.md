@@ -1,20 +1,27 @@
 ```shell
-for i in {PN_1406_Er,PN_1406_La,PN_1406_Bm}; do
-  for j in {1,4,7,10}; do
-    url=$path'/P3/ReplaceTip'
+#!/bin/bash
 
-    pos="{\"PosName\":\"$i\",\"Index\":$j}"
+path='http://10.5.10.87:8082'
 
-    result=$(curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d "$pos" $url)
+function foo() {
+  for i in $2; do
+    for j in $3; do
 
-    echo "任务result:${result}"
+      pos="{\"PosName\":\"$i\",\"Index\":$j}"
 
-    if [ "$result" = "{}" ]; then
-      echo "success"
-    else
-      echo "failed"
-      exit 1
-    fi
+      result=$(curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d "$pos" $path'/P3/'"$1")
+
+      echo "任务result:${result}"
+
+      if [ "$result" = "{}" ]; then
+        echo "success"
+      else
+        echo "failed"
+        exit 1
+      fi
+    done
   done
-done
+}
+
+foo ReplaceTip "PN_1209_Sp PN_1209_Lp" "$(echo {1..12})"
 ```
