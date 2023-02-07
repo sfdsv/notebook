@@ -14,6 +14,11 @@ sudo gedit /etc/apt/sources.list
 
 3.根据ubutnu版本，添加对应版本的国内源，选择其一就可以了。
 
+* [中科大](https://mirrors.ustc.edu.cn/help/ubuntu.html)
+* [清华大学](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+* [阿里云](https://developer.aliyun.com/mirror/ubuntu)
+* [网易163](http://mirrors.163.com/.help/ubuntu.html)
+
 4.然后执行更新命令
 
 ```bash
