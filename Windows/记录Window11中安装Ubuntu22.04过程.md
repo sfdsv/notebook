@@ -115,6 +115,42 @@ C:\Users\UserName\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_79
 
 第一次进入ubuntu软件后，默认需要设置用户名(**全小写**，不是Window的用户名)和密码。
 
+```
+Installing, this may take a few minutes...
+Please create a default UNIX user account. The username does not need to match your Windows username.
+For more information visit: https://aka.ms/wslusers
+Enter new UNIX username: luz
+New password:
+Retype new password:
+passwd: password updated successfully
+Installation successful!
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.15.79.1-microsoft-standard-WSL2 x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Feb  7 14:38:05 CST 2023
+
+  System load:  0.21                Processes:             9
+  Usage of /:   0.1% of 1006.85GB   Users logged in:       0
+  Memory usage: 6%                  IPv4 address for eth0: 172.19.224.171
+  Swap usage:   0%
+
+0 updates can be applied immediately.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+This message is shown once a day. To disable it please create the
+/home/luz/.hushlogin file.
+```
+
 **注意：**
 
 如果第一次进入的时候由于各种原因退出，没有设置用户名和密码，那么第二次进入就直接是root用户了。
