@@ -4,9 +4,20 @@
 
 操作系统：ubuntu20.04
 
+### crontab和crond
+
+crontab是一个命令，常见于Unix和类Unix的操作系统中，用于设置周期性被执行的指令。该命令从标准输入设备读取指令，并将其存放于`crontab`文件中，以供之后读取和执行。该词来源于希腊语chronos(χρόνος)，原意是时间。
+
+crond是crontab的守护进程。cron服务是一个定时执行的服务，可以通过crontab命令添加或编辑需求定时执行的任务。
+
 ## cron
 
 cron是一个Linux定时执行工具，可以在无需人工干预的情况下运行作业。在Ubuntu server 下，cron是被默认安装并启动的。
+
+
+linux定时任务分为两种：
+
+1. 系统自身轮训的任务
 
 cron服务的启动和停止：
 
@@ -50,6 +61,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
 #
 ```
+
 ### 用法
 
 **cron特殊符号**
