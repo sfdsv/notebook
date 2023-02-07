@@ -35,7 +35,7 @@ cron服务的启动和停止：
 pgrep cron
 ```
 
-查看注释说明 `cat /etc/crontab`:
+`cat /etc/crontab`:
 
 ```
 # /etc/crontab: system-wide crontab
