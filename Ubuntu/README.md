@@ -1,19 +1,6 @@
 ## ubuntu20.04软件安装和配置
 
-### 用户目录下的中文目录修改为英文目录
-如果是中文安装，那么用户目录下一些常用文件夹会是中文名称，那么在终端中进行操作的时候会非常不方便，所以我会把中文目录名调整成英文目录名。
-```
-1.先修改语言
-export LANG=en_US
-
-2.然后执行
-xdg-user-dirs-gtk-update
-
-弹出提示,仔细看看,点击同意
-
-3.reboot重启
-弹出提示框,点击取消,即可
-```
+### [用户目录下的中文目录修改为英文目录](https://github.com/sfdsv/notebook/blob/main/Ubuntu/%E7%94%A8%E6%88%B7%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%94%B9%E4%B8%BA%E8%8B%B1%E6%96%87%E7%9B%AE%E5%BD%95.md)
 
 ### 安装网络工具包（ifconfig）
 ```bash
@@ -36,7 +23,5 @@ sudo apt install git
 ### [edge浏览器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85edge%E6%B5%8F%E8%A7%88%E5%99%A8.md)
 
 ### [gcc编译器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85gcc.md)
-
-## ubuntu20.04软件使用
 
 ### [cron定时器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/cron%E5%AE%9A%E6%97%B6%E5%99%A8.md)
