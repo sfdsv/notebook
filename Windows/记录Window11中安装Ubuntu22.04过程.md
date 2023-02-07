@@ -4,13 +4,11 @@
 
 **操作系统**
 
-版本	Windows 11 家庭中文版  
-版本	22H2  
-安装日期	2022/10/7  
-操作系统版本	22621.963  
-序列号	PF42FJPA  
-体验	Windows Feature Experience Pack 1000.22638.1000.0  
-
+    版本	Windows 11 专业版
+    版本	21H2
+    安装日期	2022/3/28
+    操作系统版本	22000.1455
+    体验	Windows 功能体验包 1000.22000.1455.0
 
 ### 激活WSL
 
@@ -68,7 +66,7 @@ PS C:\Desktop> wslconfig /u Ubuntu-22.04
 
 与上述注销操作对应的文件夹：
 
-```te
+```
 C:\Users\UserName\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc\LocalState
 ```
 
