@@ -387,7 +387,9 @@ Sleeping for 1 second to let systemd settle
 nsenter: cannot open /proc/26/ns/time: No such file or directory
 ```
 
-解决方法:
+有两种解决办法，官方为第二种。
+
+**解决方法1:**
 
 参照链接:https://github.com/DamionGans/ubuntu-wsl2-systemd-script/issues/76
 
@@ -429,28 +431,24 @@ bash ubuntu-wsl2-systemd-script.sh --force
 
 在子系统中尝试运行systemctl, 如果没有得到错误,并看到单元列表,那么就成功了.
 
+**解决方法2**（后面突然看到说WSL2已经支持systemctl了,只需要修改一下配置文件就可以）：
 
+参考链接:https://ubuntu.com//blog/ubuntu-wsl-enable-systemd
 
-> 后面突然看到说WSL2已经支持systemctl了,只需要修改一下配置文件就可以.
->
-> 参考链接:https://ubuntu.com//blog/ubuntu-wsl-enable-systemd
->
-> <img width="503" alt="image" src="https://user-images.githubusercontent.com/73980771/207614715-f2928c30-4fcd-4f97-9a22-50915866240a.png">
->
-> 1. 进入ubuntu子系统内部,修改` /etc/wsl.conf`文件:
->
-> ```
-> [boot]
-> systemd=true
-> ```
->
-> 2. 然后在powershell中关掉wsl,重启ubuntu子系统.
->
-> ```
-> wsl --shutdown
-> ```
+<img width="503" alt="image" src="https://user-images.githubusercontent.com/73980771/207614715-f2928c30-4fcd-4f97-9a22-50915866240a.png">
 
+1. 进入ubuntu子系统内部,修改` /etc/wsl.conf`文件:
 
+```
+[boot]
+systemd=true
+```
+
+2. 然后在powershell中关掉wsl,重启ubuntu子系统.
+
+```
+wsl --shutdown
+```
 
 #### 安装图形界面
 
