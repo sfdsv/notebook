@@ -4,6 +4,7 @@
 
 官网：https://www.jetbrains.com/toolbox-app/
 
+![image](https://user-images.githubusercontent.com/73980771/217294112-0a15dd27-d9e6-44b5-a4f9-a9e01644535a.png)
 
 ## 安装
 
