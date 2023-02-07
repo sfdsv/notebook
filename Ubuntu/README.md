@@ -7,21 +7,27 @@
 sudo apt install net-tools
 ```
 
-### [截图软件flameshot](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E6%88%AA%E5%9B%BE%E5%B7%A5%E5%85%B7flameshot.md)
+### [安装截图软件flameshot](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E6%88%AA%E5%9B%BE%E5%B7%A5%E5%85%B7flameshot.md)
 
-### 版本管理工具git
+### 安装版本管理工具git
 ```bash
 sudo apt install git
 ```
 
-### [golang](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%87%E7%BA%A7go.md)
+### [安装golang](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%87%E7%BA%A7go.md)
 
-### [wps2019](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85wps2019.md)
+### [安装wps2019](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85wps2019.md)
 
-### [chrome浏览器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8.md)
+### [安装chrome浏览器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85chrome%E6%B5%8F%E8%A7%88%E5%99%A8.md)
 
-### [edge浏览器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85edge%E6%B5%8F%E8%A7%88%E5%99%A8.md)
+### [安装edge浏览器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85edge%E6%B5%8F%E8%A7%88%E5%99%A8.md)
 
-### [gcc编译器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85gcc.md)
+### [安装gcc编译器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E5%AE%89%E8%A3%85gcc.md)
 
 ### [cron定时器](https://github.com/sfdsv/notebook/blob/main/Ubuntu/cron%E5%AE%9A%E6%97%B6%E5%99%A8.md)
+
+### [换源](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu%E6%8D%A2%E5%9B%BD%E5%86%85%E6%BA%90.md)
+
+### [安装配置protoc环境](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85protoc.md)
+
+### [安装图像标签标注软件Labelme](https://github.com/sfdsv/notebook/blob/main/Ubuntu/ubuntu20.04%E5%AE%89%E8%A3%85%E5%9B%BE%E5%83%8F%E6%A0%87%E7%AD%BE%E6%A0%87%E6%B3%A8%E8%BD%AF%E4%BB%B6labelme.md)
