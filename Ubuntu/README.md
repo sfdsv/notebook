@@ -9,10 +9,7 @@ sudo apt install net-tools
 
 [安装截图软件flameshot](./ubuntu20.04%E6%88%AA%E5%9B%BE%E5%B7%A5%E5%85%B7flameshot.md)
 
-安装版本管理工具git
-```bash
-sudo apt install git
-```
+[安装版本管理工具git](ubuntu20.04安装git.md)
 
 [安装golang](./ubuntu%E5%AE%89%E8%A3%85%E5%92%8C%E5%8D%87%E7%BA%A7go.md)
 
