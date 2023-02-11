@@ -141,7 +141,8 @@ $ pip install opentrons
 $ sudo gedit /etc/profile
 ```
 
-![image-20230211150553977](/home/luz/.config/Typora/typora-user-images/image-20230211150553977.png)
+![image](https://user-images.githubusercontent.com/73980771/218251083-a9c481d8-04a8-44c2-b6df-3f073db466e0.png)
+
 
 将`export PATH=$PATH:/home/luz/.local/bin`添加到文件末尾，保存。
 
