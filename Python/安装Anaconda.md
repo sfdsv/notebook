@@ -13,33 +13,39 @@ bash ~/Downloads/Anaconda3-2022.10-Linux-x86_64.sh
 ```
 
 1. 
-![image-20230211160759718](/home/luz/.config/Typora/typora-user-images/image-20230211160759718.png)
+![image](https://user-images.githubusercontent.com/73980771/218251115-ece94434-8f93-49b3-836b-12461b6d9582.png)
+
 
 点击“Enter”查看“许可证协议”。
 
 2. 
-![image-20230211155645060](/home/luz/.config/Typora/typora-user-images/image-20230211155645060.png)
+![image](https://user-images.githubusercontent.com/73980771/218251119-85987146-ad74-4c5f-9548-667fb4662a37.png)
+
 
 点击空格翻页。
 
 3. 
-![image-20230211155904801](/home/luz/.config/Typora/typora-user-images/image-20230211155904801.png)
+![image](https://user-images.githubusercontent.com/73980771/218251123-b6cb7d09-f8d3-4e3e-9a53-c585a9ff9fa0.png)
+
 
 在“许可证协议”界面将屏幕滚动至底，输入“yes”表示同意许可证协议内容。
 
 4. 
-![image-20230211160722096](/home/luz/.config/Typora/typora-user-images/image-20230211160722096.png)
+![image](https://user-images.githubusercontent.com/73980771/218251130-58ed065c-3e82-487e-acb5-0913e647565b.png)
+
 
 “按回车键确认安装路径，按'CTRL-C'取消安装或者指定安装目录。”
 可以指定目录，输入要安装的目录即可。
 
 5. 
-![image-20230211161024116](/home/luz/.config/Typora/typora-user-images/image-20230211161024116.png)
+![image](https://user-images.githubusercontent.com/73980771/218251132-fe21f179-a637-4343-b396-a6a24ecb5e17.png)
+
 
 初始化，输入“yes”。
 
 6. 
-![image-20230211161301380](/home/luz/.config/Typora/typora-user-images/image-20230211161301380.png)
+![image](https://user-images.githubusercontent.com/73980771/218251136-fce2c0b9-e65d-44d9-8be8-8fbec1adb8a7.png)
+
 
 成功，结束！
 
