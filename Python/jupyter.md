@@ -1,0 +1,4 @@
+```bash
+$ conda install jupyter
+```
+
