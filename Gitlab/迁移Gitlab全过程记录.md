@@ -2,9 +2,9 @@
 
 如果不耐烦看步骤，可以直接跳到结果章节。
 
-## 问题1
+## 问题1-迁移后,删除原Gitlab仓库或修改仓库路径报错500
 
-迁移后,删除原Gitlab仓库或修改仓库路径报错500。查看日志:
+查看日志:
 
 ```
 ==> /var/log/gitlab/gitlab-rails/production.log <==
@@ -29,7 +29,7 @@ Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.5ms | Elasticsearch
 
 重启gitlab : `gitlab-ctl restart`
 
-## 问题2
+## 问题2-本地备份推送到smb远端
 
 使用Gitlab自动备份在本地后，推送到smb远端服务器。
 
@@ -87,7 +87,7 @@ chmod +x backup_remote.sh
 
 安装完smb客户端后，直接将gitlab的备份目录作为挂载目录,测试备份命令时，备份成功，但是备份目录和挂载目录都未发现备份文件。
 
-## 问题3
+## 问题3-临时挂载，重启失效
 
 上诉问题2提到的挂载为临时挂载，服务器重启后失效。
 
