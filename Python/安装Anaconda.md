@@ -33,7 +33,6 @@ bash ~/Downloads/Anaconda3-2022.10-Linux-x86_64.sh
 4. 
 ![image](https://user-images.githubusercontent.com/73980771/218251130-58ed065c-3e82-487e-acb5-0913e647565b.png)
 
-
 “按回车键确认安装路径，按'CTRL-C'取消安装或者指定安装目录。”
 可以指定目录，输入要安装的目录即可。
 
@@ -49,7 +48,7 @@ bash ~/Downloads/Anaconda3-2022.10-Linux-x86_64.sh
 
 成功，结束！
 
-## 使用
+## 		使用
 
 
 **验证conda已被安装，查看conda版本号：**
@@ -59,7 +58,7 @@ bash ~/Downloads/Anaconda3-2022.10-Linux-x86_64.sh
 conda 22.9.0
 ```
 
-**激活环境：**
+ **激活环境：**
 
 ```bash
 luz@luz-Vostro-3470:~$ conda activate
