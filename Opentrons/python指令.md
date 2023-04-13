@@ -1,3 +1,337 @@
+# 基础命令
+
+## 操作枪头
+
+前置命令：
+
+```python
+from opentrons import protocol_api
+
+metadata = {'apiLevel': '2.13'}
+
+def run(protocol: protocol_api.ProtocolContext):
+    tiprack = protocol.load_labware('corning_96_wellplate_360ul_flat', 2)
+    plate = protocol.load_labware('opentrons_96_tiprack_300ul', 3)
+    pipette = protocol.load_instrument('p300_single_gen2', mount='left')
+    # the example code below would go here, inside the run function
+```
+
+### 取枪头
+
+```python
+pipette.pick_up_tip(tiprack['A1'])
+```
+
+如果移液器已经和一个枪头支架相关联，那么可以简化调用为：
+
+```python
+pipette.pick_up_tip()
+```
+
+这将使用tipracks列表中的下一个可用tip头，tipracks列表是被传递的`tip_racks`参数。
+
+### 丢枪头
+
+```python
+pipette.pick_up_tip()
+pipette.drop_tip(tiprack['A1'])  # 丢枪头到指定位置
+pipette.pick_up_tip()
+pipette.drop_tip()  # 不指定时，默认丢到垃圾桶
+```
+
+### 返回枪头
+
+```python
+pipette.pick_up_tip(tiprack['A3'])
+pipette.return_tip() # 默认将会返回到位置A3处
+```
+
+API版本2.2及以上：
+
+```python
+tip_rack = protocol.load_labware(
+        'opentrons_96_tiprack_300ul', 1)
+pipette = protocol.load_instrument(
+    'p300_single_gen2', mount='left', tip_racks=[tip_rack])
+
+pipette.pick_up_tip() # 从位置A1取枪头
+pipette.return_tip()
+pipette.pick_up_tip() # 从位置B1取枪头
+```
+
+API版本2.0和2.1时：
+
+```python
+tip_rack = protocol.load_labware(
+        'opentrons_96_tiprack_300ul', 1)
+pipette = protocol.load_instrument(
+    'p300_single_gen2', mount='left', tip_racks=[tip_rack])
+
+pipette.pick_up_tip() # 从位置A1取枪头
+pipette.return_tip()
+pipette.pick_up_tip() # 从位置A1取枪头
+```
+
+### 遍历枪头
+
+前置命令：
+
+```python
+from opentrons import protocol_api
+
+metadata = {'apiLevel': '2.13'}
+
+def run(protocol: protocol_api.ProtocolContext):
+    plate = protocol.load_labware(
+        'corning_96_wellplate_360ul_flat', 2)
+    tip_rack_1 = protocol.load_labware(
+        'opentrons_96_tiprack_300ul', 3)
+    tip_rack_2 = protocol.load_labware(
+        'opentrons_96_tiprack_300ul', 4)
+    pipette = protocol.load_instrument(
+        'p300_single_gen2', mount='left', tip_racks=[tip_rack_1, tip_rack_2])
+```
+
+循环取枪头：
+
+```python
+pipette.pick_up_tip()  # picks up tip_rack_1:A1
+pipette.return_tip()
+pipette.pick_up_tip()  # picks up tip_rack_1:A2
+pipette.drop_tip()     # automatically drops in trash
+
+# use loop to pick up tips tip_rack_1:A3 through tip_rack_2:H12
+tips_left = 94 + 96 # add up the number of tips leftover in both tipracks
+for _ in range(tips_left):
+    pipette.pick_up_tip()
+    pipette.return_tip()
+```
+
+当所有被关联的枪头支架的枪头被使用完后，再次取枪头将会引发一个错误：
+
+```python
+# this will raise an exception if run after the previous code block
+pipette.pick_up_tip()
+```
+
+改变移液器取枪头的第一个位置`starting_tip`：
+
+```python
+pipette.starting_tip = tip_rack_1.well('C3')
+pipette.pick_up_tip()  # 从枪头支架1的C3位置取枪头
+pipette.return_tip()
+```
+
+重置枪头记录`reset_tipracks()`：
+
+```python
+# 用完了所有枪头
+for _ in range(96+96):
+     pipette.pick_up_tip()
+     pipette.return_tip()
+
+# Reset the tip tracker
+pipette.reset_tipracks()
+
+# 从第一个枪头支架的A1孔取枪头
+pipette.pick_up_tip()
+```
+
+检查是否存在枪头`has_tip`：
+
+```python
+for block in range(3):
+    if block == 0 and not pipette.has_tip:
+        pipette.pick_up_tip()
+    else:
+        m300.mix(mix_repetitions, 250, d)
+        m300.blow_out(s.bottom(10))
+        m300.return_tip()
+```
+
+## 液体控制
+
+前置命令：
+
+```python
+metadata = {'apiLevel': '2.13'}
+
+def run(protocol):
+    plate = protocol.load_labware('corning_96_wellplate_360ul_flat', 2)
+    tiprack = protocol.load_labware('opentrons_96_tiprack_300ul', 3)
+    pipette = protocol.load_instrument('p300_single_gen2', mount='left', tip_racks=[tiprack])
+    pipette.pick_up_tip()
+    # example code goes here
+```
+
+### 吸液
+
+```python
+pipette.aspirate(50, plate['A1'], rate=2.0)  # 从孔A1吸液50ul，速度2.0
+```
+
+* 参数`location`可以为一个孔(`plate['A1']`)或孔内的一个位置(`plate['A1'].bottom`)
+* 参数`rate` is a multiplication factor of the pipette’s default aspiration flow rate. 默认的吸液速度在[Defaults](https://docs.opentrons.com/v2/new_pipette.html#defaults).
+
+可以简化吸液参数：
+
+```python
+pipette.aspirate(50)  # 从当前位置吸液20ul
+```
+
+### 喷液
+
+与吸液类似，指明吸液体积和位置或仅体积：
+
+```python
+pipette.dispense(50, plate['B1'], rate=2.0) # dispense 50uL to plate:B1 at twice the normal rate
+pipette.dispense(50)  
+```
+
+### 吹出
+
+概念：将移液器的tip中的额外的空气吹出，确保剩余的液滴被排出。
+
+```python
+pipette.blow_out()            # blow out in current location
+pipette.blow_out(plate['B3']) # blow out in current plate:B3
+```
+
+### 触碰Tip头
+
+概念：移动移液器当前附着的tip头到孔位的四个相对边缘，去除可能悬挂在tip上的的液滴。
+
+参数：`touch_tip(location, radius, v_offset, speed)`
+
+```python
+pipette.touch_tip()            # touch tip within current location
+pipette.touch_tip(v_offset=-2) # touch tip 2mm below the top of the current location
+pipette.touch_tip(plate['B1']) # touch tip within plate:B1
+pipette.touch_tip(plate['B1'], speed=100) # touch tip within plate:B1 at 100 mm/s
+pipette.touch_tip(plate['B1'], # touch tip in plate:B1, at 75% of total radius and -2mm from top of well
+                  radius=0.75,
+                  v_offset=-2)
+```
+
+### 混合
+
+概念：在一个单孔里连续执行多次吸喷指令。
+
+参数：`mix(repetitions, volume, location)`
+
+```python
+# mix 4 times, 100uL, in plate:A2
+pipette.mix(4, 100, plate['A2'])
+# mix 3 times, 50uL, in current location
+pipette.mix(3, 50)
+# mix 2 times, pipette's max volume, in current location
+pipette.mix(2)
+```
+
+### 空气间隙
+
+概念：在吸液后吸入空气，防止液体从移液器的tip漏出。
+
+参数：`air_gap(volume, height)`
+
+```python
+pipette.aspirate(100, plate['B4'])
+pipette.air_gap(20)
+pipette.drop_tip()
+```
+
+# 功能命令
+
+## 延迟一段时间
+
+可用于孵育等。
+
+```python
+protocol.delay(seconds=2)             # delay for 2 seconds
+protocol.delay(minutes=5)             # delay for 5 minutes
+protocol.delay(minutes=5, seconds=2)  # delay for 5 minutes and 2 seconds
+```
+
+## 暂停直到被恢复
+
+概念：暂停协议的执行，直到在Opentrons App上按下`resume`。
+
+```python
+from opentrons import protocol_api
+
+metadata = {'apiLevel': '2.13'}
+
+def run(protocol: protocol_api.ProtocolContext):
+    # The start of your protocol goes here...
+
+    # The OT-2 stops here until you press resume. It will display the message in
+    # the Opentrons App. You do not need to specify a message, but it makes things
+    # more clear.
+    protocol.pause('Time to take a break')
+```
+
+## 复位
+
+```python
+from opentrons import protocol_api, types
+
+metadata = {'apiLevel': '2.13'}
+
+def run(protocol: protocol_api.ProtocolContext):
+    pipette = protocol.load_instrument('p300_single', 'right')
+    protocol.home() # Homes the gantry, z axes, and plungers
+    pipette.home()  # Homes the right z axis and plunger
+    pipette.home_plunger() # Homes the right plunger
+```
+
+## 注释
+
+概念：在协议运行期间，显示信息在Opentrons App里。
+
+```python
+from opentrons import protocol_api, types
+
+metadata = {'apiLevel': '2.13'}
+
+def run(protocol: protocol_api.ProtocolContext):
+    protocol.comment('Hello, world!')
+```
+
+## 控制和监控机器人轨道灯
+
+概念：控制机器人的轨道灯开或关。
+
+```python
+from opentrons import protocol_api
+
+metadata = {'apiLevel': '2.13'}
+
+def run(protocol: protocol_api.ProtocolContext):
+    # turn on robot rail lights
+    protocol.set_rail_lights(True)
+
+    # turn off robot rail lights
+    protocol.set_rail_lights(False)
+```
+
+检查轨道灯是开还是关：
+
+```python
+protocol.rail_lights_on  # returns True when the lights are on,
+                         # False when the lights are off
+```
+
+## 监控机器人门状态
+
+概念：门安全开关特性标志被启动时，允许机器人暂停运行协议，当机器人门打开时禁止协议运行。
+
+检查机器人门是否关闭：
+
+```python
+protocol.door_closed  # return True when the door is closed,
+                      # False when the door is open
+```
+
 # 复杂命令
 
 下面的例子使用如下设置：
@@ -239,6 +573,7 @@ pipette.distribute(55, plate.wells_by_name()['A1'], plate.rows_by_name()['A'])
 ```
 
 将执行以下步骤：
+
 ```python
 Distributing 55 from well A1 in "1" to wells A1...A12 in "1"
 Transferring 55 from well A1 in "1" to wells A1...A12 in "1"
@@ -392,6 +727,7 @@ Dropping tip well A1 in "12"
    <----------重复以上步骤用于所有孔------------->
 
 8. 将处理体积喷进垃圾桶置空，如果存在
+
 9. 吹出
 
 注意，只有在`去除处理体积`后才会发生`吹出`。如果你想要在每次`喷液`后`吹出`，你不应该包含处理体积。
