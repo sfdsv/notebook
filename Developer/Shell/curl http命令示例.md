@@ -1,4 +1,4 @@
-```
+```shell
 #!/bin/bash
 
 echo "任务start"

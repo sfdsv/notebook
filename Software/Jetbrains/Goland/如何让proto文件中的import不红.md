@@ -1,8 +1,6 @@
-Goland自带Protocol Buffers插件。
+Goland自带Protocol Buffers插件
 
-
-
-Goland打开新项目时，插件的默认参数为：
+Gola打开新项目时，插件的默认参数为：
 
 ![image-20221124233351126](https://cdn.jsdelivr.net/gh/sfdsv/pic/img/202211242333198.png)
 

@@ -83,6 +83,6 @@ Successfully installed aionotify-0.2.0 anyio-3.3.0 attrs-22.2.0 click-8.1.3 colo
 ```
 
 临时使用
-```
+```bash
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 ```

@@ -108,8 +108,8 @@ INTERFACESv6=""
 #
 
 # option definitions common to all supported networks...
-option domain-name "example.org";
-option domain-name-servers ns1.example.org, ns2.example.org;
+# option domain-name "example.org";
+# option domain-name-servers ns1.example.org, ns2.example.org;
 
 default-lease-time 600;
 max-lease-time 7200;
