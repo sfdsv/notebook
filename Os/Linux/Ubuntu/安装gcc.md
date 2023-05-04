@@ -2,7 +2,7 @@
 
 ### 环境
 
-ubuntu20.04
+操作系统：ubuntu20.04
 
 ### 安装步骤
 
@@ -25,6 +25,7 @@ gcc --version
 ```
 
 ```
+(base) luz@luz-Vostro-3470:~$ gcc --version
 gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 Copyright (C) 2019 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
