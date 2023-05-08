@@ -35,7 +35,7 @@
 
 * Current：选择github
 * Branch：根据自己需要，github默认为main
-* Custom Url:https://cdn.jsdelivr.net/gh/username/仓库名
+* Custom Url:`https://cdn.jsdelivr.net/gh/username/仓库名`
 
       CDN加速链接的设置，要替换为你的用户名和仓库名
       
