@@ -4,21 +4,21 @@
 
 新建github仓库：仓库名最好不要带奇怪符号，就简单英文单词就好(如pic)：
 
-![20221125145606](.assets/vscode-picgo-github搭建图床/20221125145606.png)
+![20221125145606](https://user-images.githubusercontent.com/73980771/236742117-5abcc87f-1b71-4ffe-af31-6325d3be64de.png)
 
 >仓库属性一定要公开！！！不然网页上不能直接看到图片，而只能看到图片名。
 
 点击setting->deverloper settings->Personal access tokens->generate new token(classic):
 
-![20221125145820](.assets/vscode-picgo-github搭建图床/20221125145820.png)
+![20221125145820](https://user-images.githubusercontent.com/73980771/236742176-9e151873-0f67-4ef5-9e37-b81e06bb1c05.png)
 
 填写名称，勾选repo就好了：
 
-![20221125145912](.assets/vscode-picgo-github搭建图床/20221125145912.png)
+![20221125145912](https://user-images.githubusercontent.com/73980771/236742211-28b344e3-db85-4e5e-ba83-c876c53df902.png)
 
 划到底部点击generate token，生成新token：
 
-![20221125145450](.assets/vscode-picgo-github搭建图床/20221125145450.png)
+![20221125145450](https://user-images.githubusercontent.com/73980771/236742267-5e2d221c-76c5-4ff2-ac35-409184481ab8.png)
 
 保存好这个token，一会要用。
 
@@ -26,11 +26,12 @@
 
 在vscode扩展中安装picgo，右键打开扩展设置：
 
-![20221125150503](.assets/vscode-picgo-github搭建图床/20221125150503.png)
+![20221125150503](https://user-images.githubusercontent.com/73980771/236742327-7d4fff72-49d5-459b-90b2-6b48ed0f38ac.png)
+
 
 具体设置如下图：
 
-![20221125150617](.assets/vscode-picgo-github搭建图床/20221125150617.png)
+![20221125150617](https://user-images.githubusercontent.com/73980771/236742356-65c0b79b-a54e-4103-96c1-216f05285be1.png)
 
 * Current：选择github
 * Branch：根据自己需要，github默认为main
@@ -50,11 +51,10 @@
 
 > ubuntu20.04使用X11系统，默认没有安装xclip，需要手动安装：
 > 
->![20221125151621](.assets/vscode-picgo-github搭建图床/20221125151621.png)
->![20221125151449](.assets/vscode-picgo-github搭建图床/20221125151449.png)
+>![20221125151449](https://user-images.githubusercontent.com/73980771/236742383-b095c3e4-aeb7-4282-88f4-6234c54640a3.png)
+>![20221125151621](https://user-images.githubusercontent.com/73980771/236742401-1570db4b-1c73-43dd-90d6-346237fcf3ce.png)
 
 上传完成时，vscode右下角可以看到：
-
-![20221125151800](.assets/vscode-picgo-github搭建图床/20221125151800.png)
+![20221125151800](https://user-images.githubusercontent.com/73980771/236742420-def3ce27-3925-4ad9-8600-90aaf0233720.png)
 
 打开github，可以观察到已上传成功。且在md文件中已自动生成链接。
