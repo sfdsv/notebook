@@ -1,10 +1,12 @@
 # Vscode-PicGo-Github搭建图床详细步骤
 
-1. 创建github仓库,生成token
+## 1.创建github仓库,生成token
 
 新建github仓库：仓库名最好不要带奇怪符号，就简单英文单词就好(如pic)：
 
-![20221125145606](.assets/vscode-picgo-github搭建图床/20221125145606.png)
+![20221125145606](.assets/vscode-picgo-github%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20221125145606.png)
+
+![20221125145606](.assets/vscode-picgo-github%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20221125145606.png)
 
 >仓库属性一定要公开！！！不然网页上不能直接看到图片，而只能看到图片名。
 
@@ -22,7 +24,7 @@
 
 保存好这个token，一会要用。
 
-2. 安装与配置picgo
+## 2.配置picgo
 
 在vscode扩展中安装picgo，右键打开扩展设置：
 
@@ -34,7 +36,7 @@
 
 * Current：选择github
 * Branch：根据自己需要，github默认为main
-* Custom Url:https://cdn.jsdelivr.net/gh/username/仓库名
+* Custom Url:`https://cdn.jsdelivr.net/gh/username/仓库名`
 
       CDN加速链接的设置，要替换为你的用户名和仓库名
       
@@ -43,7 +45,7 @@
 * Repo：仓库，github上的用户名/仓库名
 * Token：第一步获取到的Token
 
-3. 打开vscode,使用picgo上传图片
+## 3.vscode,使用picgo上传图片
 
     * ctrl+alt+e，打开资源管理器选择图片文件上传；
     * 截图，ctrl+alt+u，从剪切板中上传图片；
